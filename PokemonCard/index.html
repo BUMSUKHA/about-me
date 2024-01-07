@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="scripts.js"></script>
+    <title>Digital photo cards</title>
+  </head>
+  <body>
+    <div class="cursor-circle"></div>
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-section">
+          <a href="#" class="header-logo">ㅂUㅁㅅUㄱ__</a>
+        </div>
+        <div class="header-section underline">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-list-item">
+                <a href="../index.html" target="" class="header-list-item-link"
+                  >Home</a
+                >
+              </li>
+              <li class="header-nav-list-item">
+                <a href="#" target="" class="header-list-item-link">About</a>
+              </li>
+              <li class="header-nav-list-item">
+                <a href="#" target="" class="header-list-item-link"
+                  >What i like</a
+                >
+              </li>
+              <li class="header-nav-list-item">
+                <a href="#" target="" class="header-list-item-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-action">
+            <button class="header-music-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fbf9f3"
+                width="100%"
+                height="100%"
+                viewBox="0 0 30 30"
+                version="1.1"
+              >
+                <path
+                  d="M29.439 1.392c-0.122-0.089-0.274-0.142-0.439-0.142-0.085 0-0.166 0.014-0.242 0.040l0.005-0.002-18.001 6c-0.3 0.103-0.513 0.383-0.513 0.712v14.554c-0.845-0.792-1.984-1.279-3.237-1.279-2.616 0-4.737 2.121-4.737 4.737s2.121 4.737 4.737 4.737c2.616 0 4.737-2.121 4.737-4.737 0-0.005 0-0.009-0-0.014v0.001-10.459l16.5-5.5v9.514c-0.845-0.792-1.984-1.279-3.237-1.279-2.616 0-4.737 2.121-4.737 4.737s2.121 4.737 4.737 4.737c2.616 0 4.737-2.121 4.737-4.737 0-0.005 0-0.009-0-0.014v0.001-21c0-0 0-0.001 0-0.001 0-0.249-0.121-0.47-0.308-0.606l-0.002-0.002zM7 29.25c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25c1.795 0 3.25 1.455 3.25 3.25v0c-0.002 1.794-1.456 3.248-3.25 3.25h-0zM11.75 8.541l16.5-5.5v5.418l-16.5 5.5zM25 26.25c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25c1.795 0 3.25 1.455 3.25 3.25v0c-0.001 1.794-1.456 3.249-3.25 3.25h-0z"
+                />
+              </svg>
+            </button>
+            <button class="header-burger">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="header__burger-icon"
+              >
+                <line
+                  x1="1"
+                  y1="4.625"
+                  x2="19"
+                  y2="4.625"
+                  stroke="currentColor"
+                  stroke-width="0.75"
+                ></line>
+                <line
+                  x1="1"
+                  y1="9.625"
+                  x2="13"
+                  y2="9.625"
+                  stroke="currentColor"
+                  stroke-width="0.75"
+                ></line>
+                <line
+                  x1="15"
+                  y1="9.625"
+                  x2="19"
+                  y2="9.625"
+                  stroke="currentColor"
+                  stroke-width="0.75"
+                ></line>
+                <line
+                  x1="1"
+                  y1="14.625"
+                  x2="13"
+                  y2="14.625"
+                  stroke="currentColor"
+                  stroke-width="0.75"
+                ></line>
+                <line
+                  x1="15"
+                  y1="14.625"
+                  x2="19"
+                  y2="14.625"
+                  stroke="currentColor"
+                  stroke-width="0.75"
+                ></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="center">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="card"></div>
+        <div class="circle-overflow"></div>
+      </div>
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="card"></div>
+        <div class="circle-overflow"></div>
+      </div>
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="card"></div>
+        <div class="circle-overflow"></div>
+      </div>
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="card"></div>
+        <div class="circle-overflow"></div>
+      </div>
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="card"></div>
+        <div class="circle-overflow"></div>
+      </div>
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="card"></div>
+        <div class="circle-overflow"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-section">
+        <div class="footer-list">
+          <div class="footer-link-list">
+            <h5 class="footer-list-subtitle">Aimyon</h5>
+            <ul class="footer-site-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/aimyon36/"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">instagram</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.aimyong.net/"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">Official page</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/artist/5kVZa4lFUmAQlBogl1fkd6?si=pdlsNYNIQomLFkykIRAxMA&nd=1&dlsi=ebf9d27e802b4462"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">spotify</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/user/aimyong"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">youtube</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/aimyonGtter"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">Twitter(X)</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" target=""
+                  ><span class="footer-link-labels"
+                    >Digital photo cards
+                  </span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-list">
+            <h5 class="footer-list-subtitle">Contact</h5>
+            <ul class="footer-site-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/bumsuk_ha/"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">instagram</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/BUMSUKHA/AboutMeProject"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">github</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/31zxwiytjeshfvvcvtd2tbaw6txa?si=75a2e3cc834049be"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">spotify</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@bumsuk_ha/playlists"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">youtube</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:bumsuk0811@gmail.com"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">email</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-list">
+            <h5 class="footer-list-subtitle">Contact</h5>
+            <ul class="footer-site-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/bumsuk_ha/"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">instagram</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/BUMSUKHA/AboutMeProject"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">github</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/31zxwiytjeshfvvcvtd2tbaw6txa?si=75a2e3cc834049be"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">spotify</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@bumsuk_ha/playlists"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">youtube</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:bumsuk0811@gmail.com"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">email</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-list">
+            <h5 class="footer-list-subtitle">Contact</h5>
+            <ul class="footer-site-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/bumsuk_ha/"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">instagram</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/BUMSUKHA/AboutMeProject"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">github</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/31zxwiytjeshfvvcvtd2tbaw6txa?si=75a2e3cc834049be"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">spotify</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@bumsuk_ha/playlists"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">youtube</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:bumsuk0811@gmail.com"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">email</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-list">
+            <h5 class="footer-list-subtitle">Contact</h5>
+            <ul class="footer-site-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/bumsuk_ha/"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">instagram</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/BUMSUKHA/AboutMeProject"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">github</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/31zxwiytjeshfvvcvtd2tbaw6txa?si=75a2e3cc834049be"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">spotify</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@bumsuk_ha/playlists"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">youtube</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:bumsuk0811@gmail.com"
+                  class="footer-link"
+                  target="_blank"
+                  ><span class="footer-link-labels">email</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section-bottommost">
+        <div class="footer-bottommost">
+          <ul>
+            <li>
+              <a href="#" class="footer-bottommost-links"
+                ><span class="footer-bottommost-link-labels">Events</span>
+                <span class="footer-link-dots"></span>
+                <span class="footer-link-line"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-bottommost-links"
+                ><span class="footer-bottommost-link-labels">Insights</span
+                ><span class="footer-link-dots"></span>
+                <span class="footer-link-line"></span>
+              </a>
+            </li>
+          </ul>
+          <span class="footer-copyright"> © bumsukha - 2023.12.23 </span>
+        </div>
+        <div class="footer-bottommost">
+          <span class="footer-bottommost-logo"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="835"
+              height="292"
+              viewBox="0 0 1000 350"
+              id="footer-logo-svg"
+            >
+              <path
+                d="M0 0 C14.19 0 28.38 0 43 0 C43 66 43 132 43 200 C28.81 200 14.62 200 0 200 C0 173.27 0 146.54 0 119 C-22.77 119 -45.54 119 -69 119 C-69 140.45 -69 161.9 -69 184 C-122.13 184 -175.26 184 -230 184 C-230 129.55 -230 75.1 -230 19 C-216.14 19 -202.28 19 -188 19 C-188 35.17 -188 51.34 -188 68 C-162.92 68 -137.84 68 -112 68 C-112 51.83 -112 35.66 -112 19 C-97.81 19 -83.62 19 -69 19 C-69 40.12 -69 61.24 -69 83 C-46.23 83 -23.46 83 0 83 C0 55.61 0 28.22 0 0 Z M-188 102 C-188 117.51 -188 133.02 -188 149 C-162.92 149 -137.84 149 -112 149 C-112 133.49 -112 117.98 -112 102 C-137.08 102 -162.16 102 -188 102 Z "
+                fill="#1e1e24"
+                transform="translate(230,0)"
+              />
+              <path
+                d="M0 0 C75.9 0 151.8 0 230 0 C230 41.91 230 83.82 230 127 C154.1 127 78.2 127 0 127 C0 85.09 0 43.18 0 0 Z M43 35 C43 53.81 43 72.62 43 92 C90.52 92 138.04 92 187 92 C187 73.19 187 54.38 187 35 C139.48 35 91.96 35 43 35 Z "
+                fill="#1e1e24"
+                transform="translate(43,214)"
+              />
+              <path
+                d="M0 0 C116.82 0 233.64 0 354 0 C354 13.2 354 26.4 354 40 C237.18 40 120.36 40 0 40 C0 26.8 0 13.6 0 0 Z "
+                fill="#1e1e24"
+                transform="translate(645,310)"
+              />
+              <path
+                d="M0 0 C14.52 0 29.04 0 44 0 C44.3125 21.9375 44.3125 21.9375 44.38793945 28.74584961 C44.8052248 55.54277548 50.13741815 80.40759546 67.21484375 101.64453125 C69 104 69 104 70 107 C70.99 107.33 71.98 107.66 73 108 C75.6875 110.4375 75.6875 110.4375 78 113 C78 113.66 78 114.32 78 115 C78.5465625 115.24363281 79.093125 115.48726563 79.65625 115.73828125 C82.52547816 117.28288241 84.93155907 119.18176858 87.5 121.1875 C97.05748682 128.44535335 106.84378193 133.61740747 118.12158203 137.69189453 C123.90196719 139.80393438 123.90196719 139.80393438 125 142 C121.90935881 146.68530879 118.81273934 151.3665856 115.71044922 156.04418945 C114.6553989 157.63683779 113.60200627 159.23058553 112.55029297 160.82543945 C111.04045559 163.11438708 109.52474902 165.3993467 108.0078125 167.68359375 C107.53691193 168.40026718 107.06601135 169.11694061 106.58084106 169.85533142 C103.22774341 174.88612829 103.22774341 174.88612829 101 176 C65.27770019 164.98642231 40.20788914 138.00501121 23 106 C22.39414062 107.13695313 21.78828125 108.27390625 21.1640625 109.4453125 C4.29041742 140.71839129 -18.51218974 164.00227429 -51 179 C-51.62132812 179.30437988 -52.24265625 179.60875977 -52.8828125 179.92236328 C-55.31373596 181.064768 -57.44926753 181.97501214 -60.15234375 182.09765625 C-63.19305119 180.29123174 -64.73879909 177.37393023 -66.5625 174.4375 C-67.43457172 173.0757801 -68.30833275 171.7151409 -69.18359375 170.35546875 C-69.63847168 169.64438965 -70.09334961 168.93331055 -70.56201172 168.20068359 C-72.03152244 165.95175836 -73.55234588 163.74822322 -75.09765625 161.55078125 C-75.60288818 160.83156494 -76.10812012 160.11234863 -76.62866211 159.37133789 C-77.61329426 157.97543828 -78.60228116 156.58259854 -79.59594727 155.19311523 C-83 150.33062268 -83 150.33062268 -83 147 C-81.85144531 146.50371094 -80.70289063 146.00742188 -79.51953125 145.49609375 C-63.79286081 138.64658744 -48.44537786 131.63321208 -36.25 119.1953125 C-34 117 -34 117 -32 117 C-31.74476563 116.42121094 -31.48953125 115.84242188 -31.2265625 115.24609375 C-29.8760794 112.77307534 -28.32815919 111.08958354 -26.375 109.0625 C-9.03669996 89.81165692 -1.09450417 63.06209292 -0.68359375 37.59765625 C-0.6524221 35.9811039 -0.6524221 35.9811039 -0.62062073 34.33189392 C-0.55553839 30.90882388 -0.49643327 27.48568088 -0.4375 24.0625 C-0.39427545 21.73371659 -0.35065993 19.4049404 -0.30664062 17.07617188 C-0.19916818 11.38418808 -0.09978769 5.69214441 0 0 Z "
+                fill="#1e1e24"
+                transform="translate(403,17)"
+              />
+              <path
+                d="M0 0 C77.88 0 155.76 0 236 0 C236 40.92 236 81.84 236 124 C221.81 124 207.62 124 193 124 C193 94.63 193 65.26 193 35 C129.31 35 65.62 35 0 35 C0 23.45 0 11.9 0 0 Z "
+                fill="#1e1e24"
+                transform="translate(375,221)"
+              />
+              <path
+                d="M0 0 C14.19 0 28.38 0 43 0 C43 67.65 43 135.3 43 205 C28.81 205 14.62 205 0 205 C0 171.01 0 137.02 0 102 C-22.77 102 -45.54 102 -69 102 C-69 90.45 -69 78.9 -69 67 C-46.23 67 -23.46 67 0 67 C0 44.89 0 22.78 0 0 Z "
+                fill="#1e1e24"
+                transform="translate(568,0)"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

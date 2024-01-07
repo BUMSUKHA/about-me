@@ -12,7 +12,7 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background-color: #18181c;
+  background: radial-gradient(ellipse at bottom, #1e1e24 0%, #18181c 100%);
   font-family: "Pretendard Light", sans-serif;
   color: #fbf9f3;
 }
@@ -40,7 +40,7 @@ html {
   left: 0;
   background: radial-gradient(circle, #fbf9f3 15%, transparent 60%);
   mix-blend-mode: difference;
-  opacity: 0.1;
+  opacity: 0;
   border-radius: 50%;
   will-change: transform;
   z-index: 100;
@@ -151,23 +151,32 @@ html {
   display: flex;
 }
 
-.header-search-icon svg {
-  height: 18px;
+.header-music-icon svg {
+  height: 19px;
   position: relative;
   top: 1px;
+  opacity: 0.85;
+}
+
+.header-music-icon svg:nth-of-type(2) {
+  display: none;
+}
+
+.header-action .header-burger {
+  margin-left: 32px;
 }
 
 .header-burger svg {
   width: 28px;
-  margin-left: 32px;
 }
 
 .header-action button {
   padding: 0px;
   margin: 0px;
   color: #fbf9f3;
-  background-color: #18181c;
+  background-color: #00ff0000;
   border: 0px;
+  cursor: pointer;
 }
 
 .underline {

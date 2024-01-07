@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const pTag = document.querySelectorAll("p");
   const h5Tag = document.querySelectorAll("h5");
+  const buttonTag = document.querySelectorAll("button");
+
+  const audioTag = document.querySelector("audio");
+  const musicBtn = document.querySelector(".header-music-icon");
+
+  const body = document.querySelector("body");
 
   let mouseX = 0;
   let mouseY = 0;
@@ -23,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let scrolled = 0;
 
   let cursorCirclespeed = 0.1;
+
+  let isFirstMouseMove = true;
+
+  audioTag.muted = true;
+  audioTag.volume = 0.08;
 
   const animate = () => {
     let distX = mouseX - cursorCircleX;
@@ -38,6 +49,28 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   animate();
+
+  musicBtn.addEventListener("click", function () {
+    const musicSVGMuted = document.querySelector(
+      ".header-music-icon svg:nth-of-type(1)"
+    );
+    const musicSVGPlay = document.querySelector(
+      ".header-music-icon svg:nth-of-type(2)"
+    );
+
+    if (window.getComputedStyle(musicSVGPlay).display === "none") {
+      musicSVGMuted.style.display = "none";
+      musicSVGPlay.style.display = "inline";
+      audioTag.play().then(function () {
+        audioTag.muted = false;
+      });
+    } else if (window.getComputedStyle(musicSVGMuted).display === "none") {
+      musicSVGMuted.style.display = "inline";
+      musicSVGPlay.style.display = "none";
+      audioTag.pause();
+      audioTag.muted = true;
+    }
+  });
 
   function cursorCircleATagHover() {
     cursorCircle.style.width = "3.5vmax";
@@ -57,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cursorCircle.style.width = "";
     cursorCircle.style.height = "";
     cursorCircle.style.background = "";
-    cursorCircle.style.opacity = "";
+    cursorCircle.style.opacity = ".1";
     cursorCircle.style.mixBlendMode = "";
   }
 
@@ -69,13 +102,17 @@ document.addEventListener("DOMContentLoaded", function () {
         cursorCircle.style.background = "#fbf9f3";
         cursorCircle.style.opacity = "1";
         cursorCircle.style.mixBlendMode = "overlay";
-        console.log("1");
       });
       a.addEventListener("mouseleave", cursorCircleNotHover);
     } else {
       a.addEventListener("mouseover", cursorCircleATagHover);
       a.addEventListener("mouseleave", cursorCircleNotHover);
     }
+  });
+
+  buttonTag.forEach((b) => {
+    b.addEventListener("mouseover", cursorCircleATagHover);
+    b.addEventListener("mouseleave", cursorCircleNotHover);
   });
 
   pTag.forEach((p) => {
@@ -94,6 +131,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("mousemove", (e) => {
+    if (isFirstMouseMove) {
+      setTimeout(function () {
+        cursorCircle.style.opacity = "0.1";
+        isFirstMouseMove = false;
+      }, 100);
+    }
+
     scrolled = window.scrollY;
     mouseX = e.clientX - cursorCircle.offsetWidth / 2.5;
     mouseY = e.clientY - cursorCircle.offsetHeight / 2.5 + scrolled;
@@ -108,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     footerLogoSVG.setAttribute("height", footerLogoSVGHeight);
   });
 
-  footerLogoSVG.setAttribute("width", `${(vw - 389.948) / 2}`); // 초기에 한 번 호출하여 초기 화면 크기에 맞게 SVG의 너비를 설정합니다.
+  footerLogoSVG.setAttribute("width", `${(vw - 389.948) / 2}`); // 초기에 한 번 호출하여 초기 화면 크기에 맞게 SVG의 너비를 설정
   footerLogoSVG.setAttribute(
     "height",
     `${(((vw - 389.948) / 2) * 350) / 1000}`
@@ -123,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (scrollPosition >= targetPosition) {
       headerInner.style.backgroundColor = "#18181c"; // 원하는 배경색으로 변경
     } else {
-      headerInner.style.backgroundColor = ""; // 특정 위치에 도달하지 않으면 기본 배경색으로 변경 (여기에 원하는 색상을 지정하세요)
+      headerInner.style.backgroundColor = ""; // 특정 위치에 도달하지 않으면 기본 배경색으로 변경
     }
   });
 
